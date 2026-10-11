@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prof. Dr. Muhammad Haroon Ghous | Urologist in Lahore</title>
+<meta name="description" content="Prof. Dr. Muhammad Haroon Ghous – Consultant Urologist in Lahore. Endo-Urology, Uro-Oncology, Andrology and Sexual Health. Book an appointment.">
+<style>
+  :root{
+    --navy:#0b2545; --blue:#13579b; --teal:#0f9d9a; --light:#f3f7fb; --text:#1d2a3a; --muted:#5b6b7e; --white:#fff;
+    --radius:16px; --shadow:0 10px 30px rgba(11,37,69,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--white);line-height:1.65}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .container{width:min(1120px,92%);margin:0 auto}
+  section{padding:84px 0}
+  h1,h2,h3{line-height:1.2;color:var(--navy)}
+  h2{font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:10px}
+  .eyebrow{color:var(--teal);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;margin-bottom:10px;display:block}
+  .lead{color:var(--muted);max-width:640px;margin-bottom:40px}
+  .center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:600;border:2px solid transparent;cursor:pointer;font-size:1rem;transition:.25s}
+  .btn-primary{background:var(--teal);color:#fff}
+  .btn-primary:hover{background:#0b807d;transform:translateY(-2px)}
+  .btn-outline{border-color:#fff;color:#fff}
+  .btn-outline:hover{background:#fff;color:var(--navy)}
+  .btn-dark{background:var(--navy);color:#fff}
+  .btn-dark:hover{background:var(--blue)}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);box-shadow:0 2px 14px rgba(0,0,0,.06)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .logo{font-weight:800;color:var(--navy);font-size:1.1rem}
+  .logo span{color:var(--teal)}
+  nav ul{display:flex;gap:26px;list-style:none;align-items:center}
+  nav a{font-weight:500;font-size:.95rem}
+  nav a:hover{color:var(--teal)}
+  .menu-btn{display:none;background:none;border:0;font-size:1.7rem;color:var(--navy);cursor:pointer}
+
+  /* Hero */
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);color:#fff;padding:70px 0 90px}
+  .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+  .hero h1{color:#fff;font-size:clamp(2rem,4.5vw,3.3rem);margin-bottom:8px}
+  .hero .title{color:#8fe3e0;font-weight:600;font-size:1.15rem;margin-bottom:18px}
+  .hero p{opacity:.92;max-width:540px;margin-bottom:28px}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .photo-wrap{position:relative;justify-self:center;width:min(380px,100%)}
+  .photo-frame{aspect-ratio:4/5;border-radius:24px;overflow:hidden;background:linear-gradient(160deg,#1b6fb8,#0f9d9a);box-shadow:0 25px 60px rgba(0,0,0,.35);border:6px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;position:relative}
+  .photo-frame img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+  .photo-placeholder{color:#fff;text-align:center;padding:20px;font-size:.95rem;opacity:.9}
+  .photo-placeholder b{display:block;font-size:4rem;margin-bottom:6px}
+  .badge{position:absolute;bottom:-18px;left:-18px;background:#fff;color:var(--navy);padding:12px 18px;border-radius:14px;box-shadow:var(--shadow);font-weight:700;font-size:.9rem}
+  .badge small{display:block;color:var(--muted);font-weight:500}
+
+  /* Quick strip */
+  .strip{margin-top:-46px;position:relative;z-index:5}
+  .strip-grid{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+  .strip-item{padding:26px;display:flex;gap:14px;align-items:center;border-right:1px solid #e8eef5}
+  .strip-item:last-child{border:0}
+  .ico{width:48px;height:48px;border-radius:12px;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex:none}
+  .strip-item strong{display:block;color:var(--navy)}
+  .strip-item span{color:var(--muted);font-size:.92rem}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+  .creds{display:grid;gap:12px;margin-top:18px}
+  .cred{background:var(--light);padding:14px 18px;border-radius:12px;border-left:4px solid var(--teal);font-weight:500}
+  .cred small{display:block;color:var(--muted);font-weight:400}
+
+  /* Expertise */
+  .expertise{background:var(--light)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{background:#fff;padding:32px;border-radius:var(--radius);box-shadow:var(--shadow);transition:.3s}
+  .card:hover{transform:translateY(-6px)}
+  .card .ico{background:linear-gradient(135deg,var(--teal),var(--blue));color:#fff;margin-bottom:16px}
+  .card h3{margin-bottom:8px;font-size:1.25rem}
+  .card p{color:var(--muted);font-size:.95rem}
+
+  /* Locations */
+  .loc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .loc{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+  .loc iframe{width:100%;height:230px;border:0}
+  .loc-body{padding:24px;display:flex;flex-direction:column;flex:1}
+  .loc h3{font-size:1.2rem;margin-bottom:6px}
+  .loc p{color:var(--muted);font-size:.93rem;margin-bottom:6px}
+  .time{background:var(--light);padding:10px 14px;border-radius:10px;font-size:.92rem;margin:8px 0 16px}
+  .time b{color:var(--navy)}
+  .loc .btn{margin-top:auto;justify-content:center;padding:12px 20px;font-size:.95rem}
+
+  /* Appointment */
+  .appointment{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff}
+  .appointment h2{color:#fff}
+  .appointment .lead{color:#cfe0f1}
+  .ap-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+  .ap-info li{list-style:none;margin-bottom:14px;display:flex;gap:12px;align-items:flex-start}
+  .ap-info a{text-decoration:underline}
+  form{background:#fff;color:var(--text);padding:34px;border-radius:var(--radius);box-shadow:0 25px 60px rgba(0,0,0,.3)}
+  form h3{margin-bottom:18px}
+  label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px;color:var(--navy)}
+  input,textarea,select{width:100%;padding:13px 15px;border:1.5px solid #d6e0ec;border-radius:10px;font:inherit;margin-bottom:16px;background:#fbfdff}
+  input:focus,textarea:focus,select:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,157,154,.15)}
+  textarea{resize:vertical;min-height:100px}
+  .form-actions{display:flex;gap:12px;flex-wrap:wrap}
+  .form-actions .btn{flex:1;justify-content:center;min-width:170px}
+  .btn-sms{background:var(--navy);color:#fff}
+  .note{font-size:.8rem;color:var(--muted);margin-top:14px}
+
+  /* Footer */
+  footer{background:#071a33;color:#b8c7da;padding:44px 0 26px;font-size:.93rem}
+  .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;margin-bottom:26px}
+  footer h4{color:#fff;margin-bottom:8px}
+  footer a:hover{color:#8fe3e0}
+  .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;text-align:center;font-size:.85rem}
+
+  /* Floating call */
+  .float-call{position:fixed;right:20px;bottom:20px;z-index:60;background:var(--teal);color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+
+  @media(max-width:960px){
+    .hero-grid,.about-grid,.ap-grid{grid-template-columns:1fr}
+    .cards,.loc-grid{grid-template-columns:1fr 1fr}
+    .strip-grid{grid-template-columns:1fr}
+    .strip-item{border-right:0;border-bottom:1px solid #e8eef5}
+    .photo-wrap{order:-1;width:min(300px,100%)}
+  }
+  @media(max-width:680px){
+    section{padding:60px 0}
+    .cards,.loc-grid{grid-template-columns:1fr}
+    .menu-btn{display:block}
+    nav ul{position:absolute;top:70px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;gap:16px;box-shadow:0 12px 20px rgba(0,0,0,.08);display:none}
+    nav ul.open{display:flex}
+    .badge{left:8px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#home" class="logo">Dr. Haroon <span>Ghous</span></a>
+    <nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#appointment">Appointment</a></li>
+        <li><a class="btn btn-primary" style="padding:10px 20px" href="tel:+923004111999">📞 0300 4111999</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <h1>Prof. Dr. Muhammad Haroon Ghous</h1>
+      <div class="title">Consultant Urologist &amp; Endo-Urologist · Lahore</div>
+      <p>Specialist care in endo-urology, uro-oncology, andrology and sexual health, with international training and a patient-first approach.</p>
+      <div class="hero-actions">
+        <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+        <a href="tel:+923004111999" class="btn btn-outline">📞 0300 4111999</a>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <!-- PICTURE AREA: replace "doctor.jpg" with your photo file name or image URL -->
+      <div class="photo-frame">
+        <div class="photo-placeholder"><b>👨‍⚕️</b>Doctor's Photo Here</div>
+        <img src="doctor.jpg" alt="Prof. Dr. Muhammad Haroon Ghous" onerror="this.style.display='none'">
+      </div>
+      <div class="badge">FRCSEd · FRCSI<small>Urology Specialist</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK STRIP -->
+<div class="strip">
+  <div class="container strip-grid">
+    <div class="strip-item"><div class="ico">📞</div><div><strong>Call Now</strong><span><a href="tel:+923004111999">0300 4111999</a></span></div></div>
+    <div class="strip-item"><div class="ico">🕕</div><div><strong>Saleem Memorial Timings</strong><span>Mon – Sat, 6 PM – 8 PM</span></div></div>
+    <div class="strip-item"><div class="ico">📍</div><div><strong>3 Hospitals</strong><span>Across Lahore</span></div></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container about-grid">
+    <div>
+      <span class="eyebrow">About the Doctor</span>
+      <h2>Experienced, Internationally Trained Urologist</h2>
+      <p style="color:var(--muted);margin-bottom:14px">Prof. Dr. Muhammad Haroon Ghous is a urologist practicing in Lahore, Pakistan, with training from the Royal Colleges of Surgeons of Edinburgh and Ireland and advanced minimally invasive surgical training at the University of Strasbourg, France.</p>
+      <p style="color:var(--muted)">He treats a wide range of urological conditions with a focus on modern endoscopic techniques, cancer care, and men's sexual health, in a respectful and confidential setting.</p>
+    </div>
+    <div>
+      <span class="eyebrow">Qualifications</span>
+      <div class="creds">
+        <div class="cred">MBBS</div>
+        <div class="cred">FRCSEd<small>Fellow, Royal College of Surgeons of Edinburgh</small></div>
+        <div class="cred">FRCSI<small>Fellow, Royal College of Surgeons in Ireland</small></div>
+        <div class="cred">DIRCAD – EITSFR<small>University of Strasbourg, France</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="expertise" id="expertise">
+  <div class="container center">
+    <span class="eyebrow">Areas of Expertise</span>
+    <h2>Specialized Urology Care</h2>
+    <p class="lead">Comprehensive diagnosis and treatment using advanced techniques.</p>
+    <div class="cards" style="text-align:left">
+      <div class="card"><div class="ico">🔬</div><h3>Endo-Urology</h3><p>Minimally invasive endoscopic procedures for kidney stones, prostate and urinary tract conditions with faster recovery.</p></div>
+      <div class="card"><div class="ico">🩺</div><h3>Uro-Oncology</h3><p>Diagnosis and management of cancers of the kidney, bladder, prostate and related urological organs.</p></div>
+      <div class="card"><div class="ico">💙</div><h3>Andrology &amp; Sexual Health</h3><p>Confidential evaluation and treatment of male reproductive and sexual health concerns.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section id="locations">
+  <div class="container center">
+    <span class="eyebrow">Where to Find Me</span>
+    <h2>Clinic &amp; Hospital Locations</h2>
+    <p class="lead">Consultations are available at the following hospitals in Lahore.</p>
+    <div class="loc-grid" style="text-align:left">
+
+      <div class="loc">
+        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Saleem Memorial Hospital map" src="https://maps.google.com/maps?q=Saleem+Memorial+Hospital+Lahore&amp;output=embed"></iframe>
+        <div class="loc-body">
+          <h3>Saleem Memorial Hospital</h3>
+          <p>Lahore, Pakistan</p>
+          <div class="time"><b>Timings:</b> Monday – Saturday, 6 PM – 8 PM</div>
+          <a class="btn btn-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Saleem+Memorial+Hospital+Lahore">📍 Open in Google Maps</a>
+        </div>
+      </div>
+
+      <div class="loc">
+        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bahria International Hospital map" src="https://maps.google.com/maps?q=Bahria+International+Hospital+Lahore&amp;output=embed"></iframe>
+        <div class="loc-body">
+          <h3>Bahria International Hospital</h3>
+          <p>Bahria Town, Lahore</p>
+          <div class="time"><b>Timings:</b> Please call to confirm</div>
+          <a class="btn btn-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Bahria+International+Hospital+Lahore">📍 Open in Google Maps</a>
+        </div>
+      </div>
+
+      <div class="loc">
+        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="University of Lahore Teaching Hospital map" src="https://maps.google.com/maps?q=University+of+Lahore+Teaching+Hospital&amp;output=embed"></iframe>
+        <div class="loc-body">
+          <h3>University of Lahore Teaching Hospital</h3>
+          <p>Lahore, Pakistan</p>
+          <div class="time"><b>Timings:</b> Please call to confirm</div>
+          <a class="btn btn-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=University+of+Lahore+Teaching+Hospital">📍 Open in Google Maps</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section class="appointment" id="appointment">
+  <div class="container ap-grid">
+    <div>
+      <span class="eyebrow" style="color:#8fe3e0">Appointments</span>
+      <h2>Book Your Appointment</h2>
+      <p class="lead">Fill in the form and your request goes straight to the doctor's number. You'll be contacted to confirm the time.</p>
+      <ul class="ap-info">
+        <li>📞 <span>Phone / WhatsApp: <a href="tel:+923004111999">0300 4111999</a></span></li>
+        <li>🕕 <span>Saleem Memorial: Mon – Sat, 6 PM – 8 PM</span></li>
+        <li>🏥 <span>Also at Bahria International Hospital &amp; University of Lahore Teaching Hospital</span></li>
+      </ul>
+    </div>
+
+    <form id="apptForm" novalidate>
+      <h3>Request an Appointment</h3>
+      <label for="pname">Your Name</label>
+      <input type="text" id="pname" placeholder="Full name" required>
+
+      <label for="pphone">Your Phone Number</label>
+      <input type="tel" id="pphone" placeholder="03XX XXXXXXX" required>
+
+      <label for="plocation">Preferred Location</label>
+      <select id="plocation">
+        <option>Saleem Memorial Hospital</option>
+        <option>Bahria International Hospital</option>
+        <option>University of Lahore Teaching Hospital</option>
+      </select>
+
+      <label for="pissue">Your Issue</label>
+      <textarea id="pissue" placeholder="Briefly describe your problem" required></textarea>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary" id="waBtn">💬 Send via WhatsApp</button>
+        <button type="button" class="btn btn-sms" id="smsBtn">✉️ Send via SMS</button>
+      </div>
+      <p class="note">Your request will open in WhatsApp or SMS, addressed to 0300 4111999. Please do not share sensitive records here.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot">
+      <div>
+        <h4>Prof. Dr. Muhammad Haroon Ghous</h4>
+        <div>MBBS, FRCSEd, FRCSI, DIRCAD – EITSFR</div>
+        <div>Urologist · Lahore, Pakistan</div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div><a href="tel:+923004111999">📞 0300 4111999</a></div>
+        <div>Mon – Sat, 6 PM – 8 PM (Saleem Memorial)</div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div><a href="#about">About</a> · <a href="#expertise">Expertise</a></div>
+        <div><a href="#locations">Locations</a> · <a href="#appointment">Appointment</a></div>
+      </div>
+    </div>
+    <div class="copy">© <span id="yr"></span> Prof. Dr. Muhammad Haroon Ghous. All rights reserved.</div>
+  </div>
+</footer>
+
+<a class="float-call" href="tel:+923004111999" aria-label="Call the doctor">📞</a>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var menu = document.getElementById('menu');
+  document.getElementById('menuBtn').addEventListener('click', function(){ menu.classList.toggle('open'); });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ menu.classList.remove('open'); }); });
+
+  var DOCTOR_NUMBER = '923004111999';
+
+  function buildMessage(){
+    var name = document.getElementById('pname').value.trim();
+    var phone = document.getElementById('pphone').value.trim();
+    var issue = document.getElementById('pissue').value.trim();
+    var loc = document.getElementById('plocation').value;
+    if(!name || !phone || !issue){
+      alert('Please fill in your name, phone number and issue.');
+      return null;
+    }
+    return 'Appointment Request\n' +
+           'Name: ' + name + '\n' +
+           'Phone: ' + phone + '\n' +
+           'Location: ' + loc + '\n' +
+           'Issue: ' + issue;
+  }
+
+  document.getElementById('apptForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var msg = buildMessage();
+    if(msg){ window.open('https://wa.me/' + DOCTOR_NUMBER + '?text=' + encodeURIComponent(msg), '_blank'); }
+  });
+
+  document.getElementById('smsBtn').addEventListener('click', function(){
+    var msg = buildMessage();
+    if(msg){ window.location.href = 'sms:+' + DOCTOR_NUMBER + '?body=' + encodeURIComponent(msg); }
+  });
+</script>
+</body>
+</html>
