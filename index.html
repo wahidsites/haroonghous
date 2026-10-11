@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="google-site-verification" content="nDCoqSuHRZQLahe9S4YfsCdQsiIagDCza4-l7gm8Cs8" />
 <title>Prof. Dr. Muhammad Haroon Ghous | Urologist in Lahore | 25+ Years Experience</title>
 <meta name="description" content="Prof. Dr. Muhammad Haroon Ghous – Consultant Urologist in Lahore with 25+ years of experience. Endo-Urology, Uro-Oncology, Andrology and Sexual Health. Rated 4.8 on oladoc. Book an appointment.">
 <style>
   :root{
-    --navy:#0b2545; --blue:#13579b; --teal:#0f9d9a; --light:#f3f7fb; --text:#1d2a3a; --muted:#5b6b7e; --white:#fff; --gold:#f5b301;
+    --navy:#15110d; --blue:#8a6d2b; --teal:#b08d3c; --light:#f7f2e8; --text:#2a2520; --muted:#6b6257; --white:#fff; --gold:#d4af5a;
     --radius:16px; --shadow:0 10px 30px rgba(11,37,69,.12);
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -18,7 +17,7 @@
   img{max-width:100%;display:block}
   .container{width:min(1120px,92%);margin:0 auto}
   section{padding:84px 0}
-  h1,h2,h3{line-height:1.2;color:var(--navy)}
+  h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;line-height:1.2;color:var(--navy)}
   h2{font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:10px}
   .eyebrow{color:var(--teal);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;margin-bottom:10px;display:block}
   .lead{color:var(--muted);max-width:640px;margin-bottom:40px}
@@ -27,8 +26,10 @@
 
   /* Buttons */
   .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:600;border:2px solid transparent;cursor:pointer;font-size:1rem;transition:.25s}
-  .btn-primary{background:var(--teal);color:#fff}
-  .btn-primary:hover{background:#0b807d;transform:translateY(-2px)}
+  .btn-primary{background:var(--teal);color:#15110d}
+  .btn-primary:hover{background:#d4b15f;transform:translateY(-2px)}
+  .hero .btn-primary{background:var(--gold);color:#15110d}
+  .hero .btn-primary:hover{background:#e6c97d}
   .btn-outline{border-color:#fff;color:#fff}
   .btn-outline:hover{background:#fff;color:var(--navy)}
   .btn-dark{background:var(--navy);color:#fff}
@@ -39,7 +40,7 @@
   /* Header */
   header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);box-shadow:0 2px 14px rgba(0,0,0,.06)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
-  .logo{font-weight:800;color:var(--navy);font-size:1.1rem}
+  .logo{font-weight:700;letter-spacing:.02em;color:var(--navy);font-size:1.1rem}
   .logo span{color:var(--teal)}
   nav ul{display:flex;gap:24px;list-style:none;align-items:center}
   nav a{font-weight:500;font-size:.95rem}
@@ -48,16 +49,16 @@
   .menu-btn{display:none;background:none;border:0;font-size:1.7rem;color:var(--navy);cursor:pointer}
 
   /* Hero */
-  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);color:#fff;padding:70px 0 100px}
+  .hero{background:linear-gradient(135deg,#15110d 0%,#2a2118 100%);color:#fff;padding:70px 0 100px}
   .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
   .hero h1{color:#fff;font-size:clamp(2rem,4.5vw,3.3rem);margin-bottom:8px}
-  .hero .title{color:#8fe3e0;font-weight:600;font-size:1.15rem;margin-bottom:16px}
+  .hero .title{color:#dcc07a;font-weight:600;font-size:1.15rem;margin-bottom:16px}
   .hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
   .hero-tags span{background:rgba(255,255,255,.14);padding:6px 14px;border-radius:999px;font-size:.88rem;font-weight:500}
   .hero p{opacity:.92;max-width:540px;margin-bottom:28px}
   .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
   .photo-wrap{position:relative;justify-self:center;width:min(380px,100%)}
-  .photo-frame{aspect-ratio:4/5;border-radius:24px;overflow:hidden;background:linear-gradient(160deg,#1b6fb8,#0f9d9a);box-shadow:0 25px 60px rgba(0,0,0,.35);border:6px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;position:relative}
+  .photo-frame{aspect-ratio:4/5;border-radius:24px;overflow:hidden;background:linear-gradient(160deg,#3a2f20,#15110d);box-shadow:0 25px 60px rgba(0,0,0,.35);border:6px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;position:relative}
   .photo-frame img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
   .photo-placeholder{color:#fff;text-align:center;padding:20px;font-size:.95rem;opacity:.9}
   .photo-placeholder b{display:block;font-size:4rem;margin-bottom:6px}
@@ -69,7 +70,7 @@
   /* Stats strip */
   .strip{margin-top:-52px;position:relative;z-index:5}
   .strip-grid{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
-  .strip-item{padding:26px 18px;text-align:center;border-right:1px solid #e8eef5}
+  .strip-item{padding:26px 18px;text-align:center;border-right:1px solid #ece3d0}
   .strip-item:last-child{border:0}
   .strip-item strong{display:block;font-size:2rem;color:var(--teal);line-height:1.1}
   .strip-item span{color:var(--muted);font-size:.9rem}
@@ -79,7 +80,7 @@
   .creds{display:grid;gap:12px;margin-top:18px}
   .cred{background:var(--light);padding:14px 18px;border-radius:12px;border-left:4px solid var(--teal);font-weight:500}
   .cred small{display:block;color:var(--muted);font-weight:400}
-  .exp-box{display:flex;align-items:center;gap:18px;background:linear-gradient(135deg,var(--teal),var(--blue));color:#fff;padding:20px 24px;border-radius:var(--radius);margin-top:22px}
+  .exp-box{display:flex;align-items:center;gap:18px;background:var(--blue);color:#fff;padding:20px 24px;border-radius:var(--radius);margin-top:22px}
   .exp-box b{font-size:2.6rem;line-height:1}
   .exp-box span{font-size:.98rem;opacity:.95}
 
@@ -89,13 +90,13 @@
   .card{background:#fff;padding:32px;border-radius:var(--radius);box-shadow:var(--shadow);transition:.3s}
   .card:hover{transform:translateY(-6px)}
   .ico{width:48px;height:48px;border-radius:12px;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex:none}
-  .card .ico{background:linear-gradient(135deg,var(--teal),var(--blue));color:#fff;margin-bottom:16px}
+  .card .ico{background:var(--blue);color:#fff;margin-bottom:16px}
   .card h3{margin-bottom:8px;font-size:1.25rem}
   .card p{color:var(--muted);font-size:.95rem}
   .services{margin-top:40px;text-align:center}
   .services h3{margin-bottom:16px}
   .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
-  .chips span{background:#fff;border:1.5px solid #d6e0ec;padding:8px 16px;border-radius:999px;font-size:.9rem;font-weight:500;color:var(--navy)}
+  .chips span{background:#fff;border:1.5px solid #e3d8c2;padding:8px 16px;border-radius:999px;font-size:.9rem;font-weight:500;color:var(--navy)}
 
   /* Reviews */
   .rev-top{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:center;background:var(--light);padding:34px;border-radius:var(--radius);margin-bottom:30px}
@@ -105,8 +106,8 @@
   .rev-score small{color:var(--muted)}
   .bars{display:grid;gap:14px}
   .bar-row{display:grid;grid-template-columns:150px 1fr 48px;gap:12px;align-items:center;font-size:.92rem;font-weight:500}
-  .bar{height:10px;background:#dbe5f0;border-radius:99px;overflow:hidden}
-  .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--teal),var(--blue));border-radius:99px}
+  .bar{height:10px;background:#e6dcc8;border-radius:99px;overflow:hidden}
+  .bar i{display:block;height:100%;background:var(--blue);border-radius:99px}
   .sat{grid-column:1/-1;text-align:center;font-weight:600;color:var(--navy);padding-top:6px}
   .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left}
   .rev{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:26px;border-top:4px solid var(--teal)}
@@ -133,17 +134,17 @@
   .loc .btn{margin-top:auto;justify-content:center;padding:12px 20px;font-size:.95rem}
 
   /* Appointment */
-  .appointment{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff}
+  .appointment{background:linear-gradient(135deg,#15110d,#2a2118);color:#fff}
   .appointment h2{color:#fff}
-  .appointment .lead{color:#cfe0f1}
+  .appointment .lead{color:#d8cdb8}
   .ap-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
   .ap-info li{list-style:none;margin-bottom:14px;display:flex;gap:12px;align-items:flex-start}
   .ap-info a{text-decoration:underline}
   form{background:#fff;color:var(--text);padding:34px;border-radius:var(--radius);box-shadow:0 25px 60px rgba(0,0,0,.3)}
   form h3{margin-bottom:18px}
   label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px;color:var(--navy)}
-  input,textarea,select{width:100%;padding:13px 15px;border:1.5px solid #d6e0ec;border-radius:10px;font:inherit;margin-bottom:16px;background:#fbfdff}
-  input:focus,textarea:focus,select:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,157,154,.15)}
+  input,textarea,select{width:100%;padding:13px 15px;border:1.5px solid #e3d8c2;border-radius:10px;font:inherit;margin-bottom:16px;background:#fffdf8}
+  input:focus,textarea:focus,select:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(201,162,77,.25)}
   textarea{resize:vertical;min-height:100px}
   .form-actions{display:flex;gap:12px;flex-wrap:wrap}
   .form-actions .btn{flex:1;justify-content:center;min-width:170px}
@@ -151,10 +152,10 @@
   .note{font-size:.8rem;color:var(--muted);margin-top:14px}
 
   /* Footer */
-  footer{background:#071a33;color:#b8c7da;padding:44px 0 26px;font-size:.93rem}
+  footer{background:#0d0b09;color:#b5ab9a;padding:44px 0 26px;font-size:.93rem}
   .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;margin-bottom:26px}
   footer h4{color:#fff;margin-bottom:8px}
-  footer a:hover{color:#8fe3e0}
+  footer a:hover{color:#dcc07a}
   .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;text-align:center;font-size:.85rem}
 
   /* Floating call */
@@ -165,7 +166,7 @@
     .cards,.loc-grid,.rev-grid{grid-template-columns:1fr 1fr}
     .strip-grid{grid-template-columns:1fr 1fr}
     .strip-item:nth-child(2){border-right:0}
-    .strip-item:nth-child(-n+2){border-bottom:1px solid #e8eef5}
+    .strip-item:nth-child(-n+2){border-bottom:1px solid #ece3d0}
     .photo-wrap{order:-1;width:min(300px,100%)}
   }
   @media(max-width:680px){
@@ -217,9 +218,10 @@
       </div>
     </div>
     <div class="photo-wrap">
+      <!-- PICTURE AREA: replace "doctor.jpg" with your photo file name or image URL -->
       <div class="photo-frame">
         <div class="photo-placeholder"><b>👨‍⚕️</b>Doctor's Photo Here</div>
-        <img src="doctor.png" alt="Prof. Dr. Muhammad Haroon Ghous" onerror="this.style.display='none'">
+        <img src="doctor.jpg" alt="Prof. Dr. Muhammad Haroon Ghous" onerror="this.style.display='none'">
       </div>
       <div class="badge">FRCSEd · FRCSI<small>Urology Specialist</small></div>
       <div class="badge2">25+<small>YEARS</small></div>
@@ -399,7 +401,7 @@
 <section class="appointment" id="appointment">
   <div class="container ap-grid">
     <div>
-      <span class="eyebrow" style="color:#8fe3e0">Appointments</span>
+      <span class="eyebrow" style="color:#dcc07a">Appointments</span>
       <h2>Book Your Appointment</h2>
       <p class="lead">Fill in the form and your request goes straight to the doctor's number. You'll be contacted to confirm the time.</p>
       <ul class="ap-info">
