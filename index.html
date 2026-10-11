@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="logo.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Prof. Dr. Muhammad Haroon Ghous | Urologist in Lahore | 25+ Years Experience</title>
 <meta name="description" content="Prof. Dr. Muhammad Haroon Ghous – Consultant Urologist in Lahore with 25+ years of experience. Endo-Urology, Uro-Oncology, Andrology and Sexual Health. Rated 4.8 on oladoc. Book an appointment.">
@@ -41,7 +42,9 @@
   header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);box-shadow:0 2px 14px rgba(0,0,0,.06)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
   .logo{font-weight:700;letter-spacing:.02em;color:var(--navy);font-size:1.1rem}
-  .logo span{color:var(--teal)}
+  .logo{display:flex;align-items:center;gap:10px}
+  .logo-img{height:44px;width:auto;object-fit:contain}
+  .logo-text span{color:var(--teal)}
   nav ul{display:flex;gap:24px;list-style:none;align-items:center}
   nav a{font-weight:500;font-size:.95rem}
   nav a:hover{color:var(--teal)}
@@ -185,7 +188,7 @@
 
 <header>
   <div class="container nav">
-    <a href="#home" class="logo">Dr. Haroon <span>Ghous</span></a>
+    <a href="#home" class="logo"><img src="logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'"><span class="logo-text">Dr. Haroon <span>Ghous</span></span></a>
     <nav>
       <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
       <ul id="menu">
@@ -218,9 +221,10 @@
       </div>
     </div>
     <div class="photo-wrap">
+      <!-- PICTURE AREA: replace "doctor.jpg" with your photo file name or image URL -->
       <div class="photo-frame">
         <div class="photo-placeholder"><b>👨‍⚕️</b>Doctor's Photo Here</div>
-        <img src="doctor.png" alt="Prof. Dr. Muhammad Haroon Ghous" onerror="this.style.display='none'">
+        <img src="doctor.jpg" alt="Prof. Dr. Muhammad Haroon Ghous" onerror="this.style.display='none'">
       </div>
       <div class="badge">FRCSEd · FRCSI<small>Urology Specialist</small></div>
       <div class="badge2">25+<small>YEARS</small></div>
